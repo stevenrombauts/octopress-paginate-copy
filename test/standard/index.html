@@ -1,0 +1,13 @@
+---
+title: Posts
+permalink: /posts/
+paginate: true
+---
+{{ page.title }}
+
+Posts:
+
+{% for post in paginator.posts %}
+{{ post.title }}{% endfor %}
+
+{% include paginator_data.html %}
